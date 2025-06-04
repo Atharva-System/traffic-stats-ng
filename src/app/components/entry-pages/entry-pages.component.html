@@ -30,12 +30,12 @@
         10111 visits
       </div>
     </h3>
-    <p class="text-sm text-muted-foreground">Most common landing pages</p>
+    <p class="text-sm text-muted-foreground dark:text-gray-400">Most common landing pages</p>
   </div>
   <div class="p-6 pt-0 space-y-3">
     <div
       *ngFor="let page of pages"
-      class="p-3 rounded-lg border transition-colors bg-gray-50 dark:bg-gray-900 border-gray-200 hover:bg-gray-100"
+      class="p-3 rounded-lg border transition-colors bg-gray-50 dark:bg-gray-700 dark:border-gray-600 border-gray-200 hover:bg-gray-100"
     >
       <div class="flex items-center justify-between mb-2">
         <div class="flex items-center space-x-3">
@@ -48,23 +48,23 @@
             <span class="text-sm font-medium text-gray-900 dark:text-white">
               {{ page.title }}
             </span>
-            <span class="text-xs font-mono text-gray-500">
+            <span class="text-xs font-mono text-gray-500 dark:text-gray-400">
               {{ page.path }}
             </span>
           </div>
         </div>
         <div class="flex items-center space-x-2">
-          <span class="text-sm font-bold text-gray-700">
+          <span class="text-sm font-bold text-gray-700 dark:text-gray-300">
             {{ page.views | number }}
           </span>
-          <span class="text-xs text-gray-500">
+          <span class="text-xs text-gray-500 dark:text-gray-400">
             ({{ page.percentage }}%)
           </span>
         </div>
       </div>
       <div class="flex items-center justify-between text-xs">
-        <span class="text-gray-600">Bounce: {{ page.bounce }}</span>
-        <span class="text-gray-600">Avg Time: {{ page.avgTime }}</span>
+        <span class="text-gray-600 dark:text-gray-400">Bounce: {{ page.bounce }}</span>
+        <span class="text-gray-600 dark:text-gray-400">Avg Time: {{ page.avgTime }}</span>
       </div>
     </div>
   </div>

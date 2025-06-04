@@ -26,12 +26,12 @@
         13,293 total
       </div>
     </h3>
-    <p class="text-sm text-muted-foreground">Device types used by visitors</p>
+    <p class="text-sm text-muted-foreground dark:text-gray-400">Device types used by visitors</p>
   </div>
   <div class="p-6 pt-0 space-y-4">
     <div
       *ngFor="let device of devices"
-      class="p-3 rounded-lg border bg-gray-50 dark:bg-gray-900 border-gray-200"
+      class="p-3 rounded-lg border bg-gray-50 dark:bg-gray-700 dark:border-gray-600 border-gray-200"
     >
       <div class="flex items-center justify-between mb-2">
         <div class="flex items-center space-x-3">
@@ -77,8 +77,8 @@
           </span>
         </div>
         <div class="flex items-center space-x-2">
-          <span class="text-sm font-bold text-gray-700">{{ device.count }}</span>
-          <span class="text-xs text-gray-500">({{ device.percentage }})</span>
+          <span class="text-sm font-bold text-gray-700 dark:text-gray-300">{{ device.count }}</span>
+          <span class="text-xs text-gray-500 dark:text-gray-400">({{ device.percentage }})</span>
         </div>
       </div>
       <div class="flex flex-wrap gap-1">

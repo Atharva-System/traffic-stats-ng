@@ -63,4 +63,8 @@ export class IpAddressesComponent {
       percent: '1.5%',
     },
   ];
+
+  openIpLookup(ip: string) {
+    window.open("https://search.arin.net/rdap/?query=" + ip, "_blank");
+  }
 }
