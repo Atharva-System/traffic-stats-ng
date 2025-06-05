@@ -1,7 +1,7 @@
 <div>
   <div class="flex flex-col space-y-1.5 p-6 pb-3">
     <h3
-      class="text-2xl font-semibold leading-none tracking-tight flex items-center space-x-2 text-orange-700"
+      class="text-2xl font-semibold leading-none tracking-tight flex items-center space-x-2 text-orange-700 dark:text-orange-400"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -38,7 +38,7 @@
           <svg
             *ngIf="device.icon === 'monitor'"
             xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5 text-orange-600"
+            class="h-5 w-5 text-orange-600 dark:text-orange-400"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -51,7 +51,7 @@
           <svg
             *ngIf="device.icon === 'smartphone'"
             xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5 text-orange-600"
+            class="h-5 w-5 text-orange-600 dark:text-orange-400"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -63,7 +63,7 @@
           <svg
             *ngIf="device.icon === 'tablet'"
             xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5 text-orange-600"
+            class="h-5 w-5 text-orange-600 dark:text-orange-400"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -84,7 +84,7 @@
       <div class="flex flex-wrap gap-1">
         <div
           *ngFor="let browser of device.browsers"
-          class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors text-foreground text-xs"
+          class="inline-flex items-center rounded-full border px-2.5 py-0.5 font-semibold transition-colors text-foreground text-xs dark:text-white"
         >
           {{ browser }}
         </div>
